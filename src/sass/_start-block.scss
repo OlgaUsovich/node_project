@@ -1,0 +1,70 @@
+.start-block {
+    height: 64rem;
+    width: 100%;
+
+    &__bg {
+        background: no-repeat url(../images/start-page/start-block_bg.png);
+        background-size: cover;
+    }
+
+    &__nav {
+        margin: 0 auto;
+    }
+}
+
+.nav {
+    $parent: &;  // создание переменной .nav
+    display: flex;
+    justify-content: space-between;
+    width: 77.5%;
+    height: 6.25rem;
+
+    &__link-group {
+        display: flex;
+    }
+
+    &__link {
+        position: relative;
+        width: 7.125rem;
+        font-family: $main-font;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 6.25rem;
+        text-align: center;
+        color: #FFFFFF;
+        text-decoration: none;
+
+        &:hover {  // .nav__link:hover
+            color: $orange;
+
+            & #{$parent}__underline {  // использование переменной .nav - результат: .nav__link:hover .nav__underline
+                position: absolute;
+                top: 3.94rem;
+                left: 0.875rem;
+                width: 5.31rem;
+                border-bottom: 1px solid $orange;
+            }
+        }
+    }
+
+    &__button {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: 2.1875rem;
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:first-child {
+            margin-left: 1.0625rem;
+        }
+    }
+
+}
+
+.link-group__buttons {
+    display: flex;
+    align-items: center;
+}
+
