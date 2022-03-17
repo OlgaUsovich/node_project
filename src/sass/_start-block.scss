@@ -1,5 +1,4 @@
 .start-block {
-    height: 64rem;
     width: 100%;
 
     &__bg {
@@ -9,6 +8,40 @@
 
     &__nav {
         margin: 0 auto;
+    }
+
+    &__greeting {
+        width: 77.5%;
+        margin: 4.8125rem auto 7.25rem;
+    }
+
+    &__subtitle {
+        font-size: 4rem;
+        color: #FFFFFF;
+    }
+
+    &__title {
+        margin: 0 auto;
+        width: 77.5%;
+        height: 23.125rem;
+        font-family: $welcome-font;
+        font-size: 9rem;
+        font-weight: 700;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    &__line {
+        height: 2.75rem;
+        border-color: #FFFFFF;
+    }
+
+    &__button {
+        margin: 4.5rem auto 0;
+    }
+
+    &__sections-list {
+        margin: 7.25rem auto 0;
     }
 }
 
@@ -20,7 +53,7 @@
     height: 6.25rem;
 
     &__link-group {
-        display: flex;
+        display: flex;       
     }
 
     &__link {
@@ -66,5 +99,43 @@
 .link-group__buttons {
     display: flex;
     align-items: center;
-}
+} 
 
+.sections-list {
+    display: flex;
+    justify-content: space-between;
+    width: 77.5%;
+
+    &__section {
+        position: relative;
+        width: 16.875rem;
+        border-top: 0.25rem solid $yellow;
+        line-height: 4.9rem;
+        font-family: $main-font;
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: $yellow;
+    }
+
+    &__num {
+        font-size: 2.25rem;
+        font-weight: 700;
+    }
+
+    &__line {
+        display: none;
+    }
+
+    &__section-active {
+        border-color: #FFFFFF;
+        color: #FFFFFF;
+    }
+
+    &__line-active {
+        position: absolute;
+        top: -0.25rem;
+        width: 4.375rem;
+        border-top: 0.25rem solid $rose;
+    }
+
+}
