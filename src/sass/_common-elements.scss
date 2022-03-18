@@ -96,3 +96,20 @@
     width: 3.4375rem;
     height: 3.5rem;
 }
+
+.block-title {
+    font-family: $main-font;
+    font-size: 2.25rem;
+    text-align: center;
+    line-height: 5.0625rem;
+}
+
+.block-description {
+    width: 73.125rem;
+    padding: 2.37rem 0;
+    margin: 0 auto;
+    font-family: $main-font;
+    font-size: 1.125rem;
+    line-height: 1.32rem;
+    text-align: center;
+}
