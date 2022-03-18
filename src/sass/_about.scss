@@ -64,6 +64,16 @@
                 display: block;
                 height: inherit;
                 width: inherit;
+
+                @media (max-width: 1023.98px) {
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    bottom: 0;
+                    left: 0;
+                    height: 5.1875rem;
+                    width: inherit;
+                }
             }
 
             @media (max-width: 1023.98px) {
