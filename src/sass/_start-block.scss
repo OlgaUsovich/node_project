@@ -1,5 +1,4 @@
 .start-block {
-    width: 100%;
 
     &__bg {
         background: no-repeat url(../images/start-page/start-block_bg.png);
@@ -153,7 +152,6 @@
                 left: 0.875rem;
                 width: 5.31rem;
                 border-bottom: 1px solid $orange;
-                
 
                 @media (max-width: 1509.98px) and (min-width: 1024px) {
                     top: 2.9825rem;
@@ -204,6 +202,7 @@
 } 
 
 .sections-list {
+    $parent: &;
     display: flex;
     justify-content: space-between;
     width: 73.125rem;
@@ -227,6 +226,27 @@
         font-weight: 500;
         color: $yellow;
 
+        &:hover {
+            border-color: #FFFFFF;
+            color: #FFFFFF;
+
+            & #{$parent}__line {
+                display: block;
+                position: absolute;
+                top: -0.25rem;
+                width: 4.375rem;
+                border-top: 0.25rem solid $rose;
+
+                @media (max-width: 1509.98px) and (min-width: 1024px) {
+                    width: 4rem;
+                }
+
+                @media (max-width: 1023.98px) {
+                    width: 3.5625rem;
+                }
+            }
+        }
+
         @media (max-width: 1509.98px) and (min-width: 1024px) {
             width: 14.5625rem;
             line-height: 3.625rem;
@@ -243,6 +263,12 @@
     &__num {
         font-size: 2.25rem;
         font-weight: 700;
+        text-decoration: none;
+        color: $yellow;
+
+        &:hover {
+            color: #FFFFFF;
+        }
 
         @media (max-width: 1509.98px) and (min-width: 1024px) {
             font-size: 1.5rem;
@@ -255,25 +281,5 @@
 
     &__line {
         display: none;
-    }
-
-    &__section--active {
-        border-color: #FFFFFF;
-        color: #FFFFFF;
-    }
-
-    &__line--active {
-        position: absolute;
-        top: -0.25rem;
-        width: 4.375rem;
-        border-top: 0.25rem solid $rose;
-
-        @media (max-width: 1509.98px) and (min-width: 1024px) {
-            width: 4rem;
-        }
-
-        @media (max-width: 1023.98px) {
-            width: 3.5625rem;
-        }
     }
 }

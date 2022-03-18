@@ -1,8 +1,24 @@
 .about {
     margin: 2.625rem 10.625rem 6.625rem 9.625rem;
 
+    @media (max-width: 1509.98px) and (min-width: 1024px) {
+        margin: 1.75rem 1rem 3.625rem 0.625rem;
+    }
+
+    @media (max-width: 1023.98px) {
+        margin: 1.8125rem 1rem 3.69rem;
+    }
+
     &__pics {
         margin: 3.625rem auto 0;
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            margin-top: 3.03rem;
+        }
+    
+        @media (max-width: 1023.98px) {
+            margin-top: 1rem;
+        }
     }
     
 }
@@ -12,14 +28,39 @@
     justify-content: space-between;
     width: 73.125rem;
 
+    @media (max-width: 1509.98px) and (min-width: 1024px) {
+        width: 62.375rem;
+    }
+
+    @media (max-width: 1023.98px) {
+        flex-direction: column;
+        width: 18rem;
+        height: 50.375rem;
+    }
+
     &__pic {
         $parent: &;
         position: relative;
         width: 23.125rem;
         height: 21.125rem;
 
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            width: 19.8125rem;
+            height: 17.67rem;
+        }
+    
+        @media (max-width: 1023.98px) {
+            width: 18rem;
+            height: 16.125rem;
+        }
+
         &--first {
             background-color: $blue;
+
+            @media (max-width: 1023.98px) {
+                background: no-repeat url(../images/about/super_team_1.png);
+                background-size: cover;
+            }
         }
 
         &--second {
@@ -34,19 +75,80 @@
 
         &--cover {
             display: none;
+
+            @media (max-width: 1023.98px) {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                bottom: 0;
+                left: 0;
+                height: 5.1875rem;
+                width: inherit;
+            }
         }
 
         &:hover {
-            & #{$parent}--cover {  // использование переменной .nav - результат: .nav__link:hover .nav__underline
+            & #{$parent}--cover {  
                 position: absolute;
                 bottom: 1rem;
                 right: 1rem;
                 display: block;
                 height: inherit;
                 width: inherit;
+
+                @media (max-width: 1023.98px) {
+                    display: flex;
+                    align-items: center;
+                    bottom: 0;
+                    right: 0;
+                    height: 5.1875rem;
+                }
             }
+
         }
+    }
 
+    &__img {
+        display: inline-block;
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 8.0625rem 10.3125rem 1.875rem;
 
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            width: 2.09rem;
+            height: 2.09rem;
+            margin: 6.83rem 9.34rem 1.57rem;
+        }
+    
+        @media (max-width: 1023.98px) {
+            width: 1.9rem;
+            height: 1.9rem;
+            margin: 1.625rem 2.03rem 1.66rem 0.875rem;
+        }
+    }
+
+    &__name {
+        display: inline-block;
+        width: 23.125rem;
+        margin: 0 auto;
+        font-family: $main-font;
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #FFFFFF;
+        text-align: center;
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            width: 19.3425rem;
+            font-size: 1.125rem;
+        }
+    
+        @media (max-width: 1023.98px) {
+            vertical-align: top;
+            width: 13.1875rem;
+            height: 1.3125rem;
+            font-size: 1.125rem;
+            text-align: left;
+        }
     }
 }

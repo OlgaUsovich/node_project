@@ -102,6 +102,16 @@
     font-size: 2.25rem;
     text-align: center;
     line-height: 5.0625rem;
+
+    @media (max-width: 1509.98px) and (min-width: 1024px) {
+        font-size: 1.5rem;
+        line-height: 4.23rem;
+    }
+
+    @media (max-width: 1023.98px) {
+        font-size: 1.5rem;
+        line-height: 4.25rem;
+    }
 }
 
 .block-description {
@@ -112,4 +122,29 @@
     font-size: 1.125rem;
     line-height: 1.32rem;
     text-align: center;
+
+    @media (max-width: 1509.98px) and (min-width: 1024px) {
+        width: 61.16rem;
+        padding: 2.03rem 0;
+        font-size: 0.875rem;
+        line-height: 1.03rem;
+    }
+
+    @media (max-width: 1023.98px) {
+        width: 18rem;
+        padding: 0.98rem 0;
+        font-size: 0.875rem;
+        line-height: 1.03rem;
+    }
 }
+
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+}
+
