@@ -57,6 +57,15 @@
         &--first {
             background-color: $blue;
 
+            & #{$parent}--cover {
+                position: absolute;
+                bottom: 1rem;
+                right: 1rem;
+                display: block;
+                height: inherit;
+                width: inherit;
+            }
+
             @media (max-width: 1023.98px) {
                 background: no-repeat url(../images/about/super_team_1.png);
                 background-size: cover;
