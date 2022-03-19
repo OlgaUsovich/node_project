@@ -98,6 +98,7 @@
 }
 
 .block-title {
+    margin: 0;
     font-family: $main-font;
     font-size: 2.25rem;
     text-align: center;
@@ -148,3 +149,25 @@
     content: "";
 }
 
+
+.element-title {
+    font-family: $main-font;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+
+    @media (max-width: 1509.98px) {
+        font-size: 1.125rem;
+    }
+}
+
+.element-text {
+    font-family: $main-font;
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin: 0;
+
+    @media (max-width: 1509.98px) {
+        font-size: 0.875rem;
+    }
+}
