@@ -1,0 +1,92 @@
+.devices {
+    height: 54.25rem;
+    padding: 2.625rem 0 3.56rem;
+    background: no-repeat, linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../images/devices/background.png);
+    background-size: cover;
+
+    @media (max-width: 1509.98px) and (min-width: 1024px) {
+        height: 36.79rem;
+        padding: 1.78rem 0 2.29rem;
+
+        &__cursive-subtitle {
+            line-height: 3.39rem;
+        }
+
+        &__block-title {
+            line-height: 3.43rem;
+        }
+
+        &__line {
+            height: 1.02rem;
+        }
+
+    }
+
+    @media (max-width: 1023.98px) {
+        height: 32.125rem;
+        padding-top: 2.7rem;
+
+        &__cursive-subtitle {
+            line-height: 5.14rem;
+        }
+
+        &__block-title {
+            line-height: 5.2rem;
+        }
+
+        &__line {
+            height: 1.54rem;
+        }
+    }
+
+    &__content {
+        margin: 0 auto;
+    }
+
+    &__main-picture {
+        position: relative;
+        margin: 3.6875rem auto 0;
+        width: 73.125rem;
+        height: 32.8125rem;
+        background: no-repeat  url(../images/devices/tablet.png);
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            margin-top: 2.5rem;
+            width: 49.59rem;
+            height: 22.25rem;
+            background-size: 100%;
+        }
+    
+        @media (max-width: 1023.98px) {
+            margin-top: 2.29rem;
+            width: 17.875rem;
+            height: 13.6875rem;
+            background: no-repeat  url(../images/devices/ipad.png);
+        }
+    }
+
+    &__small-picture {
+        position: absolute;
+        top: 13.25rem;
+        left: 48.125rem;
+        width: 12.49rem;
+        height: 25.73rem;
+        background: no-repeat center/100% url(../images/devices/phone.png), no-repeat top center/95% url(../images/devices/phone-screen.png);
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            top: 8.99rem;
+            left: 32.64rem;
+            width: 8.47rem;
+            height: 17.45rem;
+        }
+    
+        @media (max-width: 1023.98px) {
+            top: 6.11rem;
+            left: 10.75rem;
+            width: 5.32rem;
+            height: 10.96rem;
+        }
+    }
+
+}
+
