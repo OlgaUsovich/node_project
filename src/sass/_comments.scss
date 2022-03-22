@@ -1,0 +1,123 @@
+.comments {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15.875rem;
+    background-color: $light-grey;
+
+    @media (max-width: 1509.98px) and (min-width: 1024px) {
+        height: 10.77rem;
+    }
+
+    @media (max-width: 1023.98px) {
+        height: 14.875rem;
+        align-items: flex-start;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 1023.98px) {
+            flex-direction: column;
+        }
+    }
+
+    &__image {
+        width: 10.625rem;
+        height: 10.625rem;
+        margin-left: 2.8125rem;
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            width: 7.205rem;
+            height: 7.205rem;
+            margin-left: 3.47rem;
+        }
+    
+        @media (max-width: 1023.98px) {
+            display: none;
+        }
+    }
+
+    &__info {
+        margin-left: 1.875rem;
+        margin-right: 3rem;
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            margin-left: 2.35rem;
+            margin-right: 2.47rem;
+        }
+    
+        @media (max-width: 1023.98px) {
+            margin: 1.8125rem auto 0.9375rem;
+        }
+    }
+
+    &__text {
+        width: 48.125rem;
+        font-family: $main-font;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $grey;
+        padding: 0.36rem 0;
+        margin: 0;
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            width: 40.9375rem;
+            font-size: 1.125rem;
+            padding: 0.09rem 0;
+        }
+    
+        @media (max-width: 1023.98px) {
+            width: 18rem;
+            font-size: 0.875rem;
+            padding: 0.31rem 0;
+        }
+    }
+
+    &__caption {
+        display: flex;
+    }
+
+    &__line {
+        width: 4.375rem;
+        height: 3rem;
+        margin: 0;
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            width: 2.97rem;
+            height: 2rem;
+        }
+    
+        @media (max-width: 1023.98px) {
+            width: 2.97rem;
+            height: 2.25rem;
+        }
+    }
+
+    &__cursive-subtitle {
+        margin-left: 3.5rem;
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            margin-left: 2.3625rem;
+        }
+    
+        @media (max-width: 1023.98px) {
+            margin-left: 2.35rem;
+        }
+    }
+
+    &__button {
+        width: 2.625rem;
+        height: 2.625rem;
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            width: 1.78rem;
+            height: 1.78rem;
+        }
+    
+        @media (max-width: 1023.98px) {
+            display: none;
+        }
+    }
+}

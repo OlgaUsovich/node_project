@@ -177,3 +177,31 @@
 .collapse--hide {
     height: 0;
   }
+
+  .button {
+      border: 0;
+      background-color: transparent;
+      padding: 0;
+      cursor: pointer;
+  }
+
+  .switches {
+      display: none;
+
+      @media (max-width: 1023.98px) {
+        display: flex;
+        justify-content: space-between;
+        width: 8.09rem;
+    }
+
+      &__switch {
+          width: 0.59rem;
+          height: 0.59rem;
+          border-radius: 50%;
+          border: 0.0625rem solid $grey;
+
+          &--active {
+              background-color: $grey;
+          }
+      }
+  }
