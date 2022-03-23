@@ -5,13 +5,31 @@
     height: 15.875rem;
     background-color: $light-grey;
 
+    &--second {
+        margin-top: 5.25rem;
+        margin-bottom: 5.25rem;
+        background-color: transparent;
+    }
+
     @media (max-width: 1509.98px) and (min-width: 1024px) {
         height: 10.77rem;
+
+        &--second {
+            margin-top: 3.6475rem;
+            margin-bottom: 3.6094rem;
+        }
     }
 
     @media (max-width: 1023.98px) {
         height: 14.875rem;
         align-items: flex-start;
+
+        &--second {
+            height: 23.0625rem;
+            margin-top: 1.8125rem;
+            margin-bottom: 1.8125rem;
+            align-items: center;
+        }
     }
 
     &__content {
@@ -36,6 +54,12 @@
     
         @media (max-width: 1023.98px) {
             display: none;
+
+            &--second {
+                display: block;
+                width: 7.205rem;
+                height: 7.205rem;
+            }
         }
     }
 
@@ -50,6 +74,10 @@
     
         @media (max-width: 1023.98px) {
             margin: 1.8125rem auto 0.9375rem;
+
+            &--second {
+                margin: 2.6075rem auto 0.875rem;
+            }
         }
     }
 
