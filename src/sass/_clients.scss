@@ -1,0 +1,164 @@
+.clients {
+    height: 57.6875rem;
+    padding: 2.625rem 0;
+    background: no-repeat, linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../images/clients/background.png);
+    background-size: cover;
+
+    @media (max-width: 1509.98px) and (min-width: 1024px) {
+        height: 39.12rem;
+        padding: 1.78rem 0;
+      }
+  
+    @media (max-width: 1023.98px) {
+        height: 94.3125rem;
+        padding: 1.75rem 0;
+      }
+
+    &__block-title {
+        line-height: 5.0625rem;
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            line-height: 3.43rem;
+        }
+    
+        @media (max-width: 1023.98px) {
+            line-height: 3.44rem;
+        }
+    }
+}
+
+.client-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 2.625rem;
+    margin: 2.625rem auto;
+    width: 73.125rem;
+
+    @media (max-width: 1509.98px) and (min-width: 1024px) {
+        row-gap: 1.75rem;
+        margin: 1.75rem auto;
+        width: 62rem;
+    }
+
+    @media (max-width: 1023.98px) {
+      flex-direction: column;
+      row-gap: 1.8125rem;
+      margin: 1.8125rem auto;
+      width: 17.9375rem;
+    }
+
+    &__client-card {
+        display: flex;
+        justify-content: space-between;
+        width: 34.375rem;
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            width: 28.375rem;
+        }
+    
+        @media (max-width: 1023.98px) {
+            flex-direction: column;
+            align-items: center;
+            width: 17.9375rem;
+        }
+    }
+
+    &__client-photo {
+        margin-top: 0.74rem;
+        width: 8.125rem;
+        height: 8.125rem;
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            margin-top: 0.46rem;
+            width: 5.51rem;
+            height: 5.51rem;
+        }
+    
+        @media (max-width: 1023.98px) {
+            margin-top: 0;
+            width: 5.51rem;
+            height: 5.51rem;
+        }
+    }
+
+    &__client-info {
+        width: 23.0625rem;
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            width: 19.75rem;
+        }
+    
+        @media (max-width: 1023.98px) {
+            width: 17.9375rem;
+        }
+    }
+
+    &__title {
+        line-height: 3.25rem;
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            line-height: 2.25rem;
+        }
+    
+        @media (max-width: 1023.98px) {
+            margin-top: 1.3025rem;
+            line-height: 2.25rem;
+            text-align: center;
+        }
+    }
+
+    &__client-job {
+        margin: 0;
+        font-family: $main-font;
+        font-size: 1.125rem;
+        line-height: 1.1875rem;
+        font-weight: 400;
+        color: $black;
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            font-size: 0.875rem;
+            line-height: 0.8125rem;
+        }
+    
+        @media (max-width: 1023.98px) {
+            font-size: 0.875rem;
+            line-height: 0.8125rem;
+            text-align: center;
+        }
+    }
+
+    &__line {
+        margin: 0;
+        width: 4.375rem;
+        height: 2rem;
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            width: 2.97rem;
+            height: 1.33rem;
+        }
+    
+        @media (max-width: 1023.98px) {
+            width: 8.375rem;
+            height: 1.3125rem;
+            margin: 0 auto;
+        }
+    }
+
+    &__text {
+        margin-top: 3.39rem;
+        margin-bottom: 1.39rem;
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            margin-top: 2.49rem;
+            margin-bottom: 1.1rem;
+            
+        }
+    
+        @media (max-width: 1023.98px) {
+            text-align: center;
+            margin-top: 1.9625rem;
+            margin-bottom: 0.5875rem;
+        }
+    }
+}
