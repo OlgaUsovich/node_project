@@ -14,6 +14,10 @@
 
   @media (max-width: 1023.98px) {
     height: 14.4375rem;
+
+    &__line {
+      height: 1.75rem;
+    }
   }
 
   &__img {
@@ -24,17 +28,10 @@
       width: 0.9rem;
       height: 1.44rem;
     }
+  }
 
-    @media (max-width: 1023.98px) {
-    }
-
-    &__block-title {
-      color: $rose;
-      line-height: 5.0625rem;
-    }
-
-    &__line {
-      height: 1.75rem;
-    }
+  &__block-title {
+    color: $rose;
+    line-height: 5.0625rem;
   }
 }
