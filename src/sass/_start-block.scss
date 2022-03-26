@@ -1,0 +1,294 @@
+.start-block {
+
+    &__bg {
+        background: no-repeat url(../images/start-page/start-block_bg.png);
+        background-size: cover;
+    }
+
+    &__nav {
+        margin: 0 auto;
+    }
+
+    &__greeting {
+        width: 73.125rem;
+        margin: 4.8125rem auto 7.25rem;
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            width: 62rem;
+            margin: 3.25rem auto 4.93rem;
+        }
+
+        @media (max-width: 1023.98px) {
+            width: 18rem;
+            margin: 2.125rem auto 3.36rem;
+        }
+    }
+
+    &__subtitle {
+        font-size: 4rem;
+        color: #FFFFFF;
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            font-size: 3rem;
+        }
+
+        @media (max-width: 1023.98px) {
+            font-size: 2.25rem;
+        }
+    }
+
+    &__title {
+        margin: 0 auto;
+        width: 73.125rem;
+        height: 23.125rem;
+        font-family: $welcome-font;
+        font-size: 9rem;
+        font-weight: 700;
+        text-align: center;
+        color: #FFFFFF;
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            width: 62rem;
+            height: 15.6875rem;
+            font-size: 6rem;
+        }
+
+        @media (max-width: 1023.98px) {
+            width: 18rem;
+            height: 14.4375rem;
+            font-size: 3rem;
+        }
+    }
+
+    &__line {
+        height: 2.75rem;
+        border-color: #FFFFFF;
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            height: 1.875rem;
+        }
+
+        @media (max-width: 1023.98px) {
+            height: 0;
+        }
+    }
+
+    &__button {
+        margin: 4.5rem auto 0;
+
+        & svg path{
+            fill: $orange;
+        }
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            margin-top: 3.05rem;
+        }
+
+        @media (max-width: 1023.98px) {
+            margin-top: 3.0625rem;
+        }
+    }
+
+    &__sections-list {
+        margin: 7.25rem auto 0;
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            margin-top: 4.93rem;
+        }
+
+        @media (max-width: 1023.98px) {
+            margin-top: 3.36rem;
+        }
+    }
+}
+
+.nav {
+    $parent: &;  // создание переменной .nav
+    display: flex;
+    justify-content: space-between;
+    width: 73.125rem;
+    height: 6.25rem;
+
+    @media (max-width: 1509.98px) and (min-width: 1024px) {
+        width: 62rem;
+        height: 4.25rem;
+    }
+
+    @media (max-width: 1023.98px) {
+        width: 18rem;
+        height: 3.5rem;
+    }
+
+    &__link-group {
+        display: flex;       
+    }
+
+    &__link-group {
+
+        @media (max-width: 1023.98px) {
+            display: none;
+        }
+    }
+
+    &__link {
+        position: relative;
+        width: 7.125rem;
+        font-family: $main-font;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 6.25rem;
+        text-align: center;
+        color: #FFFFFF;
+        text-decoration: none;
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            width: 5.87rem;
+            font-size: 0.8125rem;
+            line-height: 4.24rem;
+        }
+
+        &:hover {  // .nav__link:hover
+            color: $orange;
+
+            & #{$parent}__underline {  // использование переменной .nav - результат: .nav__link:hover .nav__underline
+                position: absolute;
+                top: 3.94rem;
+                left: 0.875rem;
+                width: 5.31rem;
+                border-bottom: 1px solid $orange;
+
+                @media (max-width: 1509.98px) and (min-width: 1024px) {
+                    top: 2.9825rem;
+                    left: 0.72rem;
+                    width: 4.37rem;
+                }
+            }
+        }
+    }
+
+    &__button {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: 2.1875rem;
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:hover path{
+            fill: $orange;
+        }
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            width: 1.0175rem;
+            height: 1.0175rem;
+            margin-left: 1.48rem;
+        }
+
+        &:first-child {
+            margin-left: 1.0625rem;
+
+            @media (max-width: 1509.98px) and (min-width: 1024px) {
+                margin-left: 1.77rem;
+            }
+        }
+    }
+
+    &__burger {
+        display: none;
+        cursor: pointer;
+
+        @media (max-width: 1023.98px) {
+            display: block;
+        }
+    }
+
+}
+
+.link-group__buttons {
+    display: flex;
+    align-items: center;
+} 
+
+.sections-list {
+    $parent: &;
+    display: flex;
+    justify-content: space-between;
+    width: 73.125rem;
+
+    @media (max-width: 1509.98px) and (min-width: 1024px) {
+        width: 62rem;
+    }
+
+    @media (max-width: 1023.98px) {
+        width: 18rem;
+    }
+    
+
+    &__section {
+        position: relative;
+        width: 16.875rem;
+        border-top: 0.25rem solid $yellow;
+        line-height: 4.9rem;
+        font-family: $main-font;
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: $yellow;
+
+        &:hover {
+            border-color: #FFFFFF;
+            color: #FFFFFF;
+
+            & #{$parent}__line {
+                display: block;
+                position: absolute;
+                top: -0.25rem;
+                width: 4.375rem;
+                border-top: 0.25rem solid $rose;
+
+                @media (max-width: 1509.98px) and (min-width: 1024px) {
+                    width: 4rem;
+                }
+
+                @media (max-width: 1023.98px) {
+                    width: 3.5625rem;
+                }
+            }
+        }
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            width: 14.5625rem;
+            line-height: 3.625rem;
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 1023.98px) {
+            width: 3.5625rem;
+            line-height: 2.625rem;
+            font-size: 0;
+        }
+    }
+
+    &__num {
+        font-size: 2.25rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: $yellow;
+
+        &:hover {
+            color: #FFFFFF;
+        }
+
+        @media (max-width: 1509.98px) and (min-width: 1024px) {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 1023.98px) {
+            font-size: 0;
+        }
+    }
+
+    &__line {
+        display: none;
+    }
+}

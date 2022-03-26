@@ -1,16 +1,995 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parcel project</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOGO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&family=Raleway:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
     <link rel="stylesheet" href="./sass/style.scss" />
-    
-</head>
-<body>
-    <h1>Parcel project</h1>
-    
+  </head>
+  <body>
+    <div class="start-block start-block__bg">
+      <div class="start-block gradient">
+        <nav class="start-block__nav nav">
+          <img class="logo" src="./images/start-page/logo.png" alt="MOGO logo" />
+          <div class="nav__link-group">
+            <a href="" class="nav__link"
+              >ABOUT
+              <div class="nav__underline"></div
+            ></a>
+            <a href="" class="nav__link"
+              >SERVICE
+              <div class="nav__underline"></div
+            ></a>
+            <a href="" class="nav__link"
+              >WORK
+              <div class="nav__underline"></div
+            ></a>
+            <a href="" class="nav__link"
+              >BLOG
+              <div class="nav__underline"></div
+            ></a>
+            <a href="" class="nav__link"
+              >CONTACT
+              <div class="nav__underline"></div
+            ></a>
+            <div class="link-group__buttons">
+              <button href="" class="nav__button">
+                <svg width="22" height="16" viewBox="0 0 22 16" fill="white" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.39 11.3101H11.2C11.0674 11.3101 10.9402 11.2574 10.8465 11.1636C10.7527 11.0698 10.7 10.9427 10.7 10.8101C10.7 10.6775 10.7527 10.5503 10.8465 10.4565C10.9402 10.3627 11.0674 10.3101 11.2 10.3101H15.39C15.5226 10.3101 15.6498 10.3627 15.7436 10.4565C15.8373 10.5503 15.89 10.6775 15.89 10.8101C15.89 10.9427 15.8373 11.0698 15.7436 11.1636C15.6498 11.2574 15.5226 11.3101 15.39 11.3101Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M18.21 11.0001C18.1508 11.0142 18.0892 11.0142 18.03 11.0001C17.9684 10.9779 17.9118 10.9436 17.8637 10.8992C17.8156 10.8547 17.7768 10.8011 17.7498 10.7414C17.7228 10.6817 17.708 10.6172 17.7063 10.5518C17.7046 10.4863 17.7161 10.4211 17.74 10.3601L20.12 4.00014C20.1671 3.87735 20.2607 3.77805 20.3805 3.72377C20.5003 3.66949 20.6366 3.66459 20.76 3.71014C20.8837 3.75945 20.9838 3.85436 21.0397 3.9753C21.0955 4.09624 21.1027 4.23399 21.06 4.36014L18.68 10.6901C18.6397 10.7815 18.5739 10.8593 18.4906 10.9143C18.4072 10.9692 18.3098 10.999 18.21 11.0001Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M8.00001 11.1901C7.89568 11.1908 7.79383 11.1582 7.7093 11.0971C7.62476 11.0359 7.56195 10.9494 7.53001 10.8501L4.39001 1.31006H1.39001C1.25741 1.31006 1.13023 1.25738 1.03646 1.16361C0.942693 1.06984 0.890015 0.942667 0.890015 0.810059C0.892575 0.678252 0.946075 0.552557 1.03929 0.459338C1.13251 0.366119 1.25821 0.312619 1.39001 0.310059H4.75001C4.85362 0.312268 4.9541 0.345988 5.03806 0.406728C5.12203 0.467468 5.18549 0.552346 5.22001 0.650059L8.51002 10.5301C8.53193 10.5917 8.54127 10.6572 8.53748 10.7225C8.53369 10.7878 8.51685 10.8518 8.48796 10.9105C8.45906 10.9692 8.4187 11.0215 8.36924 11.0644C8.31979 11.1073 8.26225 11.1398 8.20001 11.1601C8.13649 11.1851 8.06809 11.1954 8.00001 11.1901Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M9.54004 15.6899C8.9467 15.6899 8.36668 15.514 7.87333 15.1844C7.37998 14.8547 6.99546 14.3862 6.7684 13.838C6.54134 13.2898 6.48193 12.6866 6.59768 12.1047C6.71344 11.5227 6.99916 10.9882 7.41872 10.5686C7.83828 10.1491 8.37283 9.86334 8.95477 9.74759C9.53671 9.63183 10.1399 9.69124 10.6881 9.9183C11.2363 10.1454 11.7048 10.5299 12.0344 11.0232C12.3641 11.5166 12.54 12.0966 12.54 12.6899C12.54 13.4856 12.224 14.2487 11.6614 14.8113C11.0988 15.3739 10.3357 15.6899 9.54004 15.6899ZM9.54004 10.6899C9.14448 10.6899 8.7578 10.8072 8.4289 11.027C8.1 11.2468 7.84366 11.5591 7.69228 11.9246C7.54091 12.29 7.5013 12.6922 7.57847 13.0801C7.65564 13.4681 7.84612 13.8245 8.12583 14.1042C8.40553 14.3839 8.7619 14.5743 9.14986 14.6515C9.53782 14.7287 9.93995 14.6891 10.3054 14.5377C10.6709 14.3863 10.9832 14.13 11.203 13.8011C11.4227 13.4722 11.54 13.0855 11.54 12.6899C11.54 12.1595 11.3293 11.6508 10.9543 11.2757C10.5792 10.9007 10.0705 10.6899 9.54004 10.6899Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M17.05 15.6899C16.4566 15.6899 15.8766 15.514 15.3833 15.1844C14.8899 14.8547 14.5054 14.3862 14.2784 13.838C14.0513 13.2898 13.9919 12.6866 14.1076 12.1047C14.2234 11.5227 14.5091 10.9882 14.9287 10.5686C15.3482 10.1491 15.8828 9.86334 16.4647 9.74759C17.0467 9.63183 17.6499 9.69124 18.198 9.9183C18.7462 10.1454 19.2148 10.5299 19.5444 11.0232C19.874 11.5166 20.05 12.0966 20.05 12.6899C20.05 13.4856 19.7339 14.2487 19.1713 14.8113C18.6087 15.3739 17.8456 15.6899 17.05 15.6899ZM17.05 10.6899C16.6544 10.6899 16.2677 10.8072 15.9388 11.027C15.61 11.2468 15.3536 11.5591 15.2022 11.9246C15.0509 12.29 15.0112 12.6922 15.0884 13.0801C15.1656 13.4681 15.3561 13.8245 15.6358 14.1042C15.9155 14.3839 16.2718 14.5743 16.6598 14.6515C17.0478 14.7287 17.4499 14.6891 17.8154 14.5377C18.1808 14.3863 18.4932 14.13 18.7129 13.8011C18.9327 13.4722 19.05 13.0855 19.05 12.6899C19.05 12.1595 18.8393 11.6508 18.4642 11.2757C18.0891 10.9007 17.5804 10.6899 17.05 10.6899Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+              <button href="" class="nav__button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.74998 17C8.31521 17 6.91271 16.5743 5.72002 15.7768C4.52733 14.9792 3.5981 13.8457 3.04996 12.5198C2.50181 11.1939 2.35941 9.73513 2.64078 8.32823C2.92215 6.92132 3.61463 5.62953 4.63056 4.6164C5.6465 3.60327 6.94019 2.91436 8.34787 2.63688C9.75555 2.3594 11.2139 2.50583 12.5383 3.05763C13.8627 3.60944 14.9936 4.5418 15.7879 5.73668C16.5821 6.93157 17.0039 8.33524 17 9.77C16.992 11.6885 16.225 13.5259 14.8665 14.8807C13.508 16.2354 11.6685 16.9974 9.74998 17ZM9.74998 3.5C8.5147 3.50001 7.30712 3.86607 6.27975 4.55195C5.25238 5.23782 4.4513 6.21276 3.97767 7.35364C3.50404 8.49451 3.3791 9.75015 3.61864 10.962C3.85819 12.1738 4.45146 13.2875 5.32354 14.1624C6.19561 15.0372 7.30739 15.6341 8.51845 15.8775C9.72951 16.1209 10.9855 16 12.1279 15.53C13.2703 15.06 14.2478 14.262 14.937 13.2369C15.6261 12.2117 15.996 11.0053 16 9.77C16 8.1124 15.3415 6.52269 14.1694 5.35059C12.9973 4.17848 11.4076 3.52 9.74998 3.52V3.5Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M21 21.5199C20.9344 21.5207 20.8694 21.5078 20.8091 21.4819C20.7488 21.4561 20.6946 21.4179 20.65 21.3699L14.17 14.8899C14.0772 14.7971 14.025 14.6712 14.025 14.5399C14.025 14.4086 14.0772 14.2827 14.17 14.1899C14.2628 14.0971 14.3887 14.0449 14.52 14.0449C14.6513 14.0449 14.7772 14.0971 14.87 14.1899L21.35 20.6699C21.3978 20.7148 21.436 20.769 21.462 20.8292C21.4881 20.8894 21.5015 20.9543 21.5015 21.0199C21.5015 21.0855 21.4881 21.1504 21.462 21.2106C21.436 21.2708 21.3978 21.325 21.35 21.3699C21.3054 21.4179 21.2511 21.4561 21.1909 21.4819C21.1306 21.5078 21.0656 21.5207 21 21.5199Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <button class="nav__burger burger">
+            <svg width="55" height="56" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 19H38V22H14V19ZM14 26.5H38V29.5H14V26.5ZM14 34H38V37H14V34Z" fill="white" />
+            </svg>
+          </button>
+        </nav>
+
+        <div class="start-block__greeting">
+          <h2 class="cursive-subtitle start-block__subtitle">Creative Template</h2>
+          <h1 class="start-block__title">WELCOME<br />TO MOGO</h1>
+          <div class="line start-block__line"></div>
+          <a class="button-learn start-block__button" href="">LEARN MORE</a>
+        </div>
+
+        <div class="start-block__sections-list sections-list">
+          <div class="sections-list__section">
+            <div class="sections-list__line"></div>
+            <a href="#" class="sections-list__num stretched-link">01 </a>INTRO
+          </div>
+          <div class="sections-list__section">
+            <div class="sections-list__line"></div>
+            <a href="#" class="sections-list__num stretched-link">02 </a>WORK
+          </div>
+          <div class="sections-list__section">
+            <div class="sections-list__line"></div>
+            <a href="#" class="sections-list__num stretched-link">03 </a>ABOUT
+          </div>
+          <div class="sections-list__section">
+            <div class="sections-list__line"></div>
+            <a href="#" class="sections-list__num stretched-link">04 </a>CONTACTS
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about">
+      <p class="cursive-subtitle">What we do</p>
+      <p class="block-title">STORY ABOUT US</p>
+      <div class="line"></div>
+      <p class="block-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus
+        facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus
+        feugiat.
+      </p>
+      <div class="about__pics pics">
+        <div class="pics__pic pics__pic--first">
+          <div class="pics__pic--cover gradient">
+            <img class="pics__img" src="./images/about/person-icon.svg" alt="Person icon" />
+            <a class="pics__name stretched-link" href="">Super team</a>
+          </div>
+        </div>
+        <div class="pics__pic pics__pic--second">
+          <div class="pics__pic--cover gradient">
+            <img class="pics__img" src="./images/about/person-icon.svg" alt="Person icon" />
+            <a class="pics__name stretched-link" href="">Super team</a>
+          </div>
+        </div>
+        <div class="pics__pic pics__pic--third">
+          <div class="pics__pic--cover gradient">
+            <img class="pics__img" src="./images/about/person-icon.svg" alt="Person icon" />
+            <a class="pics__name stretched-link" href="">Super team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="indicator-block">
+      <div class="indicator-block__indicators">
+        <div class="indicator">
+          <p class="indicator__num">42</p>
+          <br />
+          <p class="indicator__name">Lorem ipsum</p>
+        </div>
+        <div class="indicator">
+          <p class="indicator__num">123</p>
+          <br />
+          <p class="indicator__name">Lorem ipsum</p>
+        </div>
+        <div class="indicator">
+          <p class="indicator__num">15</p>
+          <br />
+          <p class="indicator__name">Lorem ipsum</p>
+        </div>
+        <div class="indicator">
+          <p class="indicator__num">99</p>
+          <br />
+          <p class="indicator__name">Lorem ipsum</p>
+        </div>
+        <div class="indicator">
+          <p class="indicator__num">24</p>
+          <br />
+          <p class="indicator__name">Lorem ipsum</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="work">
+      <p class="cursive-subtitle">We work with</p>
+      <p class="block-title">AMAZING SERVICES</p>
+      <div class="line"></div>
+      <div class="work__cards">
+        <div class="card">
+          <img class="card__icon" src="./images/work/photography.png" alt="Photography icon" />
+          <div class="card__info">
+            <p class="element-title card__title">PHOTOGRAPHY</p>
+            <p class="element-text card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__icon" src="./images/work/web.png" alt="Web degign icon" />
+          <div class="card__info">
+            <p class="element-title card__title">WEB DESIGN</p>
+            <p class="element-text card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__icon" src="./images/work/creativity.png" alt="Creativity icon" />
+          <div class="card__info">
+            <p class="element-title card__title">CREATIVITY</p>
+            <p class="element-text card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__icon" src="./images/work/css.png" alt="CSS/HTML icon" />
+          <div class="card__info">
+            <p class="element-title card__title">CSS/HTML</p>
+            <p class="element-text card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__icon" src="./images/work/seo.png" alt="SEO icon" />
+          <div class="card__info">
+            <p class="element-title card__title">SEO</p>
+            <p class="element-text card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__icon" src="./images/work/digital.png" alt="Digital icon" />
+          <div class="card__info">
+            <p class="element-title card__title">DIGITAL</p>
+            <p class="element-text card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="devices">
+      <div class="devices__content">
+        <p class="cursive-subtitle devices__cursive-subtitle">For all devices</p>
+        <p class="block-title devices__block-title">UNIQUE DESIGN</p>
+        <div class="line devices__line"></div>
+        <div class="devices__main-picture">
+          <div class="devices__small-picture"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service">
+      <div class="service__content">
+        <p class="cursive-subtitle">Service</p>
+        <p class="block-title">WHAT WE DO</p>
+        <div class="line"></div>
+        <p class="block-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus
+          facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus
+          feugiat.
+        </p>
+        <div class="service__main-info">
+          <div class="service__image"></div>
+          <div class="text-blocks">
+            <div class="text-blocks__text-block">
+              <div class="text-blocks__title">
+                <div class="text-blocks__name">
+                  <img class="text-blocks__icon" src="./images/service/icons.svg" alt="Photography icon" />
+                  <p class="element-title text-blocks__name-text">PHOTOGRAPHY</p>
+                </div>
+                <button class="text-blocks__button">
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line
+                      y1="-1"
+                      x2="22.2282"
+                      y2="-1"
+                      transform="matrix(0.67828 -0.734803 -0.622746 -0.782424 6 29)"
+                      stroke="#C6CBCD"
+                      stroke-width="2"
+                    />
+                    <line
+                      y1="-1"
+                      x2="22.2282"
+                      y2="-1"
+                      transform="matrix(-0.67828 -0.734803 0.622746 -0.782424 36.1539 29)"
+                      stroke="#C6CBCD"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="text-blocks__text">
+                <p class="element-text text-blocks__paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus
+                  rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod
+                  sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis
+                  fringilla fermentum sed nunc aenean. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros,
+                  nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat
+                  sagittis ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec
+                  senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
+                </p>
+              </div>
+              <div class="text-blocks__title">
+                <div class="text-blocks__name">
+                  <img class="text-blocks__icon" src="./images/service/icons (1).svg" alt="Creativity icon" />
+                  <p class="element-title text-blocks__name-text">CREATIVITY</p>
+                </div>
+                <button class="text-blocks__button text-blocks__button--rotate">
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line
+                      y1="-1"
+                      x2="22.2282"
+                      y2="-1"
+                      transform="matrix(0.67828 -0.734803 -0.622746 -0.782424 6 29)"
+                      stroke="#C6CBCD"
+                      stroke-width="2"
+                    />
+                    <line
+                      y1="-1"
+                      x2="22.2282"
+                      y2="-1"
+                      transform="matrix(-0.67828 -0.734803 0.622746 -0.782424 36.1539 29)"
+                      stroke="#C6CBCD"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="text-blocks__text text-blocks__text--hidden">
+                <p class="element-text text-blocks__paragraph element-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus
+                  rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod
+                  sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis
+                  fringilla fermentum sed nunc aenean.
+                </p>
+              </div>
+              <div class="text-blocks__title">
+                <div class="text-blocks__name">
+                  <img class="text-blocks__icon" src="./images/service/icons (2).svg" alt="Web design icon" />
+                  <p class="element-title text-blocks__name-text">WEB DESIGN</p>
+                </div>
+                <button class="text-blocks__button text-blocks__button--rotate">
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line
+                      y1="-1"
+                      x2="22.2282"
+                      y2="-1"
+                      transform="matrix(0.67828 -0.734803 -0.622746 -0.782424 6 29)"
+                      stroke="#C6CBCD"
+                      stroke-width="2"
+                    />
+                    <line
+                      y1="-1"
+                      x2="22.2282"
+                      y2="-1"
+                      transform="matrix(-0.67828 -0.734803 0.622746 -0.782424 36.1539 29)"
+                      stroke="#C6CBCD"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="text-blocks__text text-blocks__text--hidden">
+                <p class="element-text text-blocks__paragraph element-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus
+                  rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod
+                  sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis
+                  fringilla fermentum sed nunc aenean.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="comments">
+      <button class="button">
+        <svg
+          class="comments__button"
+          width="42"
+          height="42"
+          viewBox="0 0 42 42"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            y1="-1"
+            x2="22.2282"
+            y2="-1"
+            transform="matrix(-0.734803 -0.67828 -0.782424 0.622746 29 36)"
+            stroke="#C6CBCD"
+            stroke-width="2"
+          />
+          <line
+            y1="-1"
+            x2="22.2282"
+            y2="-1"
+            transform="matrix(-0.734803 0.67828 -0.782424 -0.622746 29 5.84619)"
+            stroke="#C6CBCD"
+            stroke-width="2"
+          />
+        </svg>
+      </button>
+      <div class="comments__content">
+        <img class="comments__image" src="./images/comments/icon.png" alt="Comment icon" />
+        <div class="comments__info">
+          <p class="comments__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id
+            aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
+          </p>
+          <div class="comments__caption">
+            <div class="line comments__line"></div>
+            <p class="cursive-subtitle comments__cursive-subtitle">Jon Doe</p>
+          </div>
+          <div class="switches">
+            <div class="switches__switch"></div>
+            <div class="switches__switch switches__switch--active"></div>
+            <div class="switches__switch"></div>
+            <div class="switches__switch"></div>
+            <div class="switches__switch"></div>
+          </div>
+        </div>
+        <button class="button">
+          <svg
+            class="comments__button"
+            width="42"
+            height="42"
+            viewBox="0 0 42 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              y1="-1"
+              x2="22.2282"
+              y2="-1"
+              transform="matrix(0.734803 -0.67828 0.782424 0.622746 13 36)"
+              stroke="#C6CBCD"
+              stroke-width="2"
+            />
+            <line
+              y1="-1"
+              x2="22.2282"
+              y2="-1"
+              transform="matrix(0.734803 0.67828 0.782424 -0.622746 13 5.84619)"
+              stroke="#C6CBCD"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="team">
+      <p class="cursive-subtitle">Who we are</p>
+      <p class="block-title">MEET OUR TEAM</p>
+      <div class="line"></div>
+      <p class="block-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus
+        facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus
+        feugiat.
+      </p>
+
+      <div class="team__pics pics">
+        <div class="team__card">
+          <div class="team__image team__image--first">
+            <div class="team__image--cover gradient">
+              <a class="team__social" href="#"
+                ><img class="team__social" src="./images/team/facebook.png" alt="facebook icon"
+              /></a>
+              <a class="team__social" href="#"
+                ><img class="team__social" src="./images/team/twitter.png" alt="twitter icon"
+              /></a>
+              <a class="team__social" href="#"
+                ><img class="team__social" src="./images/team/pinterest.png" alt="pinterest icon"
+              /></a>
+              <a class="team__social" href="#"
+                ><img class="team__social" src="./images/team/instagram.png" alt="instagram icon"
+              /></a>
+            </div>
+          </div>
+          <p class="team__person-name">KADIN DIAS</p>
+          <p class="team__job">FOUNDER, CEO</p>
+        </div>
+
+        <div class="team__card">
+          <div class="team__image team__image--second">
+            <div class="gradient team__image--cover">
+              <a class="team__social" href="#"
+                ><img class="team__social" src="./images/team/facebook.png" alt="facebook icon"
+              /></a>
+              <a class="team__social" href="#"
+                ><img class="team__social" src="./images/team/twitter.png" alt="twitter icon"
+              /></a>
+              <a class="team__social" href="#"
+                ><img class="team__social" src="./images/team/pinterest.png" alt="pinterest icon"
+              /></a>
+              <a class="team__social" href="#"
+                ><img class="team__social" src="./images/team/instagram.png" alt="instagram icon"
+              /></a>
+            </div>
+          </div>
+          <p class="team__person-name">ZAIN CALZONI</p>
+          <p class="team__job">DESIGNER</p>
+        </div>
+
+        <div class="team__card">
+          <div class="team__image team__image--third">
+            <div class="gradient team__image--cover">
+              <a class="team__social" href="#"
+                ><img class="team__social" src="./images/team/facebook.png" alt="facebook icon"
+              /></a>
+              <a class="team__social" href="#"
+                ><img class="team__social" src="./images/team/twitter.png" alt="twitter icon"
+              /></a>
+              <a class="team__social" href="#"
+                ><img class="team__social" src="./images/team/pinterest.png" alt="pinterest icon"
+              /></a>
+              <a class="team__social" href="#"
+                ><img class="team__social" src="./images/team/instagram.png" alt="instagram icon"
+              /></a>
+            </div>
+          </div>
+          <p class="team__person-name">CHARLIE GEORGE</p>
+          <p class="team__job">PHOTOGRAPHER</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="logos">
+      <div class="logos__content">
+        <div class="logos__logo item-1">
+          <img src="./images/logos/1.png" alt="" class="logos__image" />
+        </div>
+        <div class="logos__logo item-2">
+          <img src="./images/logos/2.png" alt="" class="logos__image" />
+        </div>
+        <div class="logos__logo item-3">
+          <img src="./images/logos/3.png" alt="" class="logos__image" />
+        </div>
+        <div class="logos__logo item-4">
+          <img src="./images/logos/4.png" alt="" class="logos__image" />
+        </div>
+        <div class="logos__logo item-5">
+          <img src="./images/logos/5.png" alt="" class="logos__image" />
+        </div>
+        <div class="logos__logo item-6">
+          <img src="./images/logos/6.png" alt="" class="logos__image" />
+        </div>
+      </div>
+    </div>
+
+    <div class="our-work">
+      <p class="cursive-subtitle">What we do</p>
+      <p class="block-title">SOME OF OUR WORKS</p>
+      <div class="line"></div>
+      <p class="block-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus
+        facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus
+        feugiat.
+      </p>
+
+      <section class="container">
+        <div class="container__item img__item-1">
+          <picture class="img">
+            <source srcset="./images/our-works/big/1.png" media="(min-width:1024px)" />
+            <source srcset="./images/our-works/medium/1.png" media="(min-width:321px)" />
+            <source srcset="./images/our-works/small/1.png" media="(max-width:320px)" />
+            <img src="./images/our-works/big/1.png" alt="img" class="img img__item-1" />
+          </picture>
+
+          <div class="cover gradient">
+            <div class="cover__content">
+              <img src="./images/our-works/icons.png" alt="Cover icon" class="cover__icon" />
+              <p class="cover__title">CREATIVELY DESIGN</p>
+              <p class="cover__subtitle">Lorem ipsum dolor sit</p>
+            </div>
+            <a class="stretched-link" href="#"></a>
+          </div>
+        </div>
+
+        <div class="container__item img__item-2">
+          <picture class="img">
+            <source srcset="./images/our-works/big/2.png" media="(min-width:1024px)" />
+            <source srcset="./images/our-works/medium/2.png" media="(min-width:321px)" />
+            <source srcset="./images/our-works/small/2.png" media="(max-width:320px)" />
+            <img src="./images/our-works/big/2.png" alt="img" class="img img__item-2" />
+          </picture>
+
+          <div class="cover gradient">
+            <div class="cover__content">
+              <img src="./images/our-works/icons.png" alt="Cover icon" class="cover__icon" />
+              <p class="cover__title">CREATIVELY DESIGN</p>
+              <p class="cover__subtitle">Lorem ipsum dolor sit</p>
+            </div>
+            <a class="stretched-link" href="#"></a>
+          </div>
+        </div>
+
+        <div class="container__item img__item-3">
+          <picture class="img">
+            <source srcset="./images/our-works/big/3.png" media="(min-width:1024px)" />
+            <source srcset="./images/our-works/medium/3.png" media="(min-width:321px)" />
+            <source srcset="./images/our-works/small/3.png" media="(max-width:320px)" />
+            <img src="./images/our-works/big/3.png" alt="img" class="img img__item-3" />
+          </picture>
+
+          <div class="cover gradient">
+            <div class="cover__content">
+              <img src="./images/our-works/icons.png" alt="Cover icon" class="cover__icon" />
+              <p class="cover__title">CREATIVELY DESIGN</p>
+              <p class="cover__subtitle">Lorem ipsum dolor sit</p>
+            </div>
+            <a class="stretched-link" href="#"></a>
+          </div>
+        </div>
+
+        <div class="container__item img__item-4">
+          <picture class="img">
+            <source srcset="./images/our-works/big/4.png" media="(min-width:1024px)" />
+            <source srcset="./images/our-works/medium/4.png" media="(min-width:321px)" />
+            <source srcset="./images/our-works/small/4.png" media="(max-width:320px)" />
+            <img src="./images/our-works/big/4.png" alt="img" class="img img__item-1" />
+          </picture>
+
+          <div class="cover gradient">
+            <div class="cover__content">
+              <img src="./images/our-works/icons.png" alt="Cover icon" class="cover__icon" />
+              <p class="cover__title">CREATIVELY DESIGN</p>
+              <p class="cover__subtitle">Lorem ipsum dolor sit</p>
+            </div>
+            <a class="stretched-link" href="#"></a>
+          </div>
+        </div>
+
+        <div class="container__item img__item-5">
+          <picture class="img">
+            <source srcset="./images/our-works/big/5.png" media="(min-width:1024px)" />
+            <source srcset="./images/our-works/medium/5.png" media="(min-width:321px)" />
+            <source srcset="./images/our-works/small/5.png" media="(max-width:320px)" />
+            <img src="./images/our-works/big/5.png" alt="img" class="img img__item-1" />
+          </picture>
+
+          <div class="cover gradient">
+            <div class="cover__content">
+              <img src="./images/our-works/icons.png" alt="Cover icon" class="cover__icon" />
+              <p class="cover__title">CREATIVELY DESIGN</p>
+              <p class="cover__subtitle">Lorem ipsum dolor sit</p>
+            </div>
+            <a class="stretched-link" href="#"></a>
+          </div>
+        </div>
+
+        <div class="container__item img__item-6">
+          <picture class="img">
+            <source srcset="./images/our-works/big/6.png" media="(min-width:1024px)" />
+            <source srcset="./images/our-works/medium/6.png" media="(min-width:321px)" />
+            <source srcset="./images/our-works/small/6.png" media="(max-width:320px)" />
+            <img src="./images/our-works/big/6.png" alt="img" class="img img__item-1" />
+          </picture>
+
+          <div class="cover gradient">
+            <div class="cover__content">
+              <img src="./images/our-works/icons.png" alt="Cover icon" class="cover__icon" />
+              <p class="cover__title">CREATIVELY DESIGN</p>
+              <p class="cover__subtitle">Lorem ipsum dolor sit</p>
+            </div>
+            <a class="stretched-link" href="#"></a>
+          </div>
+        </div>
+
+        <div class="container__item img__item-7">
+          <picture class="img">
+            <source srcset="./images/our-works/big/7.png" media="(min-width:1024px)" />
+            <source srcset="./images/our-works/medium/7.png" media="(min-width:321px)" />
+            <source srcset="./images/our-works/small/7.png" media="(max-width:320px)" />
+            <img src="./images/our-works/big/7.png" alt="img" class="img img__item-1" />
+          </picture>
+
+          <div class="cover gradient">
+            <div class="cover__content">
+              <img src="./images/our-works/icons.png" alt="Cover icon" class="cover__icon" />
+              <p class="cover__title">CREATIVELY DESIGN</p>
+              <p class="cover__subtitle">Lorem ipsum dolor sit</p>
+            </div>
+            <a class="stretched-link" href="#"></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="comments comments--second">
+      <button class="button">
+        <svg
+          class="comments__button"
+          width="42"
+          height="42"
+          viewBox="0 0 42 42"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            y1="-1"
+            x2="22.2282"
+            y2="-1"
+            transform="matrix(-0.734803 -0.67828 -0.782424 0.622746 29 36)"
+            stroke="#C6CBCD"
+            stroke-width="2"
+          />
+          <line
+            y1="-1"
+            x2="22.2282"
+            y2="-1"
+            transform="matrix(-0.734803 0.67828 -0.782424 -0.622746 29 5.84619)"
+            stroke="#C6CBCD"
+            stroke-width="2"
+          />
+        </svg>
+      </button>
+      <div class="comments__content">
+        <img
+          class="comments__image comments__image--second"
+          src="./images/comments/photo-second.png"
+          alt="Comment icon"
+        />
+        <div class="comments__info">
+          <p class="comments__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id
+            aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
+          </p>
+          <div class="comments__caption">
+            <div class="line comments__line"></div>
+            <p class="cursive-subtitle comments__cursive-subtitle">James Philips</p>
+          </div>
+          <div class="switches">
+            <div class="switches__switch"></div>
+            <div class="switches__switch switches__switch--active"></div>
+            <div class="switches__switch"></div>
+            <div class="switches__switch"></div>
+            <div class="switches__switch"></div>
+          </div>
+        </div>
+        <button class="button">
+          <svg
+            class="comments__button"
+            width="42"
+            height="42"
+            viewBox="0 0 42 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              y1="-1"
+              x2="22.2282"
+              y2="-1"
+              transform="matrix(0.734803 -0.67828 0.782424 0.622746 13 36)"
+              stroke="#C6CBCD"
+              stroke-width="2"
+            />
+            <line
+              y1="-1"
+              x2="22.2282"
+              y2="-1"
+              transform="matrix(0.734803 0.67828 0.782424 -0.622746 13 5.84619)"
+              stroke="#C6CBCD"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="clients">
+      <div class="clients__content">
+        <p class="cursive-subtitle">Happy Clients</p>
+        <p class="block-title clients__block-title">WHAT PEOPLE SAY</p>
+        <div class="line"></div>
+        <div class="client-cards">
+          <div class="client-cards__client-card">
+            <img src="./images/clients/1.png" alt="Client photo" class="client-cards__client-photo" />
+            <div class="client-cards__client-info">
+              <p class="element-title client-cards__title">PHILLIP CULHANE</p>
+              <p class="client-cards__client-job">PHOTOGRAPHER</p>
+              <div class="line client-cards__line"></div>
+              <p class="element-text client-cards__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget
+                tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+              </p>
+            </div>
+          </div>
+          <div class="client-cards__client-card">
+            <img src="./images/clients/2.png" alt="Client photo" class="client-cards__client-photo" />
+            <div class="client-cards__client-info">
+              <p class="element-title client-cards__title">PAITYN PRESS</p>
+              <p class="client-cards__client-job">PHOTOGRAPHER</p>
+              <div class="line client-cards__line"></div>
+              <p class="element-text client-cards__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget
+                tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+              </p>
+            </div>
+          </div>
+          <div class="client-cards__client-card">
+            <img src="./images/clients/3.png" alt="Client photo" class="client-cards__client-photo" />
+            <div class="client-cards__client-info">
+              <p class="element-title client-cards__title">DULCE GOUSE</p>
+              <p class="client-cards__client-job">PHOTOGRAPHER</p>
+              <div class="line client-cards__line"></div>
+              <p class="element-text client-cards__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget
+                tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+              </p>
+            </div>
+          </div>
+          <div class="client-cards__client-card">
+            <img src="./images/clients/4.png" alt="Client photo" class="client-cards__client-photo" />
+            <div class="client-cards__client-info">
+              <p class="element-title client-cards__title">ZAIRE SCHLEIFER</p>
+              <p class="client-cards__client-job">PHOTOGRAPHER</p>
+              <div class="line client-cards__line"></div>
+              <p class="element-text client-cards__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget
+                tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stories">
+      <div class="stories__content">
+        <p class="cursive-subtitle">Our Stories</p>
+        <p class="block-title">LATEST BLOG</p>
+        <div class="line"></div>
+
+        <div class="stories__cards">
+          <div class="stories__card">
+            <img src="./images/stories/card_image.png" alt="cARD IMAGE" class="stories__image" />
+            <div class="stories__label">
+              <p class="num">15</p>
+              <p class="month">JAN</p>
+            </div>
+            <p class="element-title stories__title">Lorem ipsum dolor sit amet</p>
+            <p class="element-text stories__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget
+              tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+            </p>
+            <div class="stories__counts">
+              <div class="stories__count">
+                <img src="./images/stories/icons.png" alt="Count icon" /><span class="count">542</span>
+              </div>
+              <div class="stories__count">
+                <img src="./images/stories/icons (1).png" alt="Comments icon" /><span class="count">17</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="stories__card">
+            <img src="./images/stories/card_image.png" alt="cARD IMAGE" class="stories__image" />
+            <div class="stories__label">
+              <p class="num">15</p>
+              <p class="month">JAN</p>
+            </div>
+            <p class="element-title stories__title">Lorem ipsum dolor sit amet</p>
+            <p class="element-text stories__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget
+              tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+            </p>
+            <div class="stories__counts">
+              <div class="stories__count">
+                <img src="./images/stories/icons.png" alt="Count icon" /><span class="count">542</span>
+              </div>
+              <div class="stories__count">
+                <img src="./images/stories/icons (1).png" alt="Comments icon" /><span class="count">17</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="stories__card">
+            <img src="./images/stories/card_image.png" alt="cARD IMAGE" class="stories__image" />
+            <div class="stories__label">
+              <p class="num">15</p>
+              <p class="month">JAN</p>
+            </div>
+            <p class="element-title stories__title">Lorem ipsum dolor sit amet</p>
+            <p class="element-text stories__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget
+              tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+            </p>
+            <div class="stories__counts">
+              <div class="stories__count">
+                <img src="./images/stories/icons.png" alt="Count icon" /><span class="count">542</span>
+              </div>
+              <div class="stories__count">
+                <img src="./images/stories/icons (1).png" alt="Comments icon" /><span class="count">17</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="latest">
+      <img src="./images/latest/icon.png" alt="latest icon" class="latest__img" />
+      <p class="block-title latest__block-title">LATEST BLOG</p>
+      <div class="line latest__line"></div>
+    </div>
+
+    <div class="footer">
+      <div class="footer__all-info">
+      <div class="footer__content">
+        <div class="content-block content-block-item-1">
+          <img class="content-block__logo" src="./images/footer/MoGo.png" alt="MOGO logo">
+          <p class="content-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis 
+            proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet 
+            volutpat mauris est leo cursus.
+          </p>
+          <p class="content-block__followers"><span class="content-block__num">15</span><span class="content-block__num-2">K</span> FOLLOWERS</p>
+          <div class="content-block__socials">
+            <p class="content-block__follow">Follow Us</p>
+            <div class="content-block__social-buttons">
+              <button class="content-block__button button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.397 20.9972V12.8012H16.162L16.573 9.59217H13.397V7.54817C13.397 6.62217 13.655 5.98817 14.984 5.98817H16.668V3.12717C15.8487 3.03936 15.0251 2.99696 14.201 3.00017C11.757 3.00017 10.079 4.49217 10.079 7.23117V9.58617H7.33203V12.7952H10.085V20.9972H13.397Z" fill="#95E1D3"/>
+                </svg>
+              </button>
+              <button class="content-block__button button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.633 7.99704C19.646 8.17204 19.646 8.34604 19.646 8.52004C19.646 13.845 15.593 19.981 8.186 19.981C5.904 19.981 3.784 19.32 2 18.172C2.324 18.209 2.636 18.222 2.973 18.222C4.78599 18.2264 6.54765 17.6202 7.974 16.501C7.13342 16.4858 6.31858 16.2085 5.64324 15.7078C4.9679 15.2071 4.46578 14.5079 4.207 13.708C4.456 13.745 4.706 13.77 4.968 13.77C5.329 13.77 5.692 13.72 6.029 13.633C5.11676 13.4489 4.29647 12.9544 3.70762 12.2337C3.11876 11.5131 2.79769 10.6107 2.799 9.68004V9.63004C3.336 9.92904 3.959 10.116 4.619 10.141C4.06609 9.77363 3.61272 9.27507 3.29934 8.68983C2.98596 8.1046 2.82231 7.4509 2.823 6.78704C2.823 6.03904 3.022 5.35304 3.371 4.75504C4.38314 6.00006 5.6455 7.0186 7.07634 7.7447C8.50717 8.4708 10.0746 8.88826 11.677 8.97004C11.615 8.67004 11.577 8.35904 11.577 8.04704C11.5767 7.518 11.6807 6.9941 11.8831 6.50528C12.0854 6.01647 12.3821 5.57232 12.7562 5.19823C13.1303 4.82414 13.5744 4.52745 14.0632 4.32512C14.5521 4.12279 15.076 4.01878 15.605 4.01904C16.765 4.01904 17.812 4.50504 18.548 5.29104C19.4498 5.11666 20.3145 4.78747 21.104 4.31804C20.8034 5.24886 20.1738 6.03815 19.333 6.53804C20.1328 6.44682 20.9144 6.2365 21.652 5.91404C21.1011 6.71714 20.4185 7.42139 19.633 7.99704Z" fill="#95E1D3"/>
+                </svg>
+              </button>
+              <button class="content-block__button button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.002 21.0409C9.54195 21.0409 9.25195 21.0279 8.29195 20.9859C7.54332 20.9613 6.80438 20.8091 6.10695 20.5359C5.51013 20.3036 4.96813 19.9498 4.51537 19.4969C4.06261 19.0439 3.70899 18.5018 3.47695 17.9049C3.21426 17.2049 3.07257 16.4654 3.05795 15.7179C3.00195 14.7599 3.00195 14.4459 3.00195 12.0049C3.00195 9.53788 3.01495 9.24988 3.05795 8.29488C3.07289 7.5484 3.21457 6.80989 3.47695 6.11088C3.70872 5.51322 4.06258 4.97046 4.51595 4.51727C4.96931 4.06408 5.5122 3.71042 6.10995 3.47888C6.8086 3.21509 7.5473 3.07303 8.29395 3.05888C9.24895 3.00488 9.56295 3.00488 12.002 3.00488C14.482 3.00488 14.767 3.01788 15.712 3.05888C16.46 3.07288 17.202 3.21488 17.902 3.47888C18.4995 3.71069 19.0423 4.06444 19.4956 4.5176C19.949 4.97075 20.3029 5.51338 20.535 6.11088C20.802 6.82088 20.945 7.57088 20.956 8.32788C21.012 9.28588 21.012 9.59888 21.012 12.0389C21.012 14.4789 20.998 14.7989 20.956 15.7459C20.941 16.4941 20.799 17.2343 20.536 17.9349C20.3033 18.5322 19.949 19.0746 19.4956 19.5277C19.0422 19.9808 18.4995 20.3347 17.902 20.5669C17.202 20.8289 16.463 20.9709 15.716 20.9859C14.761 21.0409 14.448 21.0409 12.002 21.0409ZM11.968 4.58788C9.52195 4.58788 9.26795 4.59988 8.31295 4.64288C7.7426 4.65034 7.17775 4.75553 6.64295 4.95388C6.25288 5.1034 5.89847 5.33299 5.60257 5.62786C5.30667 5.92274 5.07583 6.27634 4.92495 6.66588C4.72495 7.20588 4.61995 7.77688 4.61395 8.35288C4.56095 9.32188 4.56095 9.57588 4.56095 12.0049C4.56095 14.4049 4.56995 14.6959 4.61395 15.6589C4.62295 16.2289 4.72795 16.7939 4.92495 17.3289C5.23095 18.1159 5.85495 18.7379 6.64395 19.0399C7.17806 19.2395 7.7428 19.3447 8.31295 19.3509C9.28095 19.4069 9.53595 19.4069 11.968 19.4069C14.421 19.4069 14.675 19.3949 15.622 19.3509C16.1924 19.344 16.7573 19.2388 17.292 19.0399C17.6799 18.8892 18.0323 18.6595 18.3267 18.3653C18.6211 18.071 18.8511 17.7188 19.002 17.3309C19.202 16.7909 19.307 16.2189 19.313 15.6429H19.324C19.367 14.6869 19.367 14.4319 19.367 11.9889C19.367 9.54588 19.356 9.28888 19.313 8.33388C19.3039 7.76434 19.1988 7.20041 19.002 6.66588C18.8514 6.27743 18.6216 5.92459 18.3272 5.62983C18.0328 5.33508 17.6802 5.10487 17.292 4.95388C16.757 4.75388 16.192 4.64988 15.622 4.64288C14.655 4.58788 14.402 4.58788 11.968 4.58788ZM12.002 16.6239C11.0875 16.6245 10.1935 16.3539 9.43284 15.8463C8.67222 15.3387 8.07921 14.617 7.72882 13.7723C7.37842 12.9277 7.28638 11.9981 7.46434 11.1012C7.6423 10.2042 8.08227 9.38022 8.72858 8.73334C9.3749 8.08647 10.1985 7.64579 11.0953 7.46706C11.9921 7.28832 12.9218 7.37955 13.7667 7.72921C14.6116 8.07888 15.3339 8.67126 15.8421 9.43144C16.3504 10.1916 16.6218 11.0855 16.622 11.9999C16.6204 13.2251 16.1332 14.3997 15.2673 15.2664C14.4013 16.1331 13.2271 16.6212 12.002 16.6239ZM12.002 8.99788C11.4086 8.99788 10.8286 9.17383 10.3352 9.50347C9.84189 9.83312 9.45738 10.3017 9.23031 10.8498C9.00325 11.398 8.94384 12.0012 9.0596 12.5832C9.17535 13.1651 9.46108 13.6996 9.88063 14.1192C10.3002 14.5388 10.8347 14.8245 11.4167 14.9402C11.9986 15.056 12.6018 14.9966 13.15 14.7695C13.6982 14.5425 14.1667 14.1579 14.4964 13.6646C14.826 13.1712 15.002 12.5912 15.002 11.9979C15.0001 11.2028 14.6834 10.4408 14.1212 9.8786C13.559 9.3164 12.797 8.99973 12.002 8.99788ZM16.802 8.28488C16.6604 8.28436 16.5203 8.25595 16.3897 8.20129C16.2591 8.14663 16.1406 8.06679 16.0409 7.96632C15.8394 7.7634 15.7269 7.48879 15.728 7.20288C15.729 6.91698 15.8436 6.64321 16.0465 6.44179C16.2494 6.24038 16.524 6.12782 16.81 6.12888C17.0959 6.12994 17.3696 6.24454 17.571 6.44745C17.7725 6.65036 17.885 6.92498 17.884 7.21088C17.8829 7.49679 17.7683 7.77056 17.5654 7.97197C17.3625 8.17339 17.0879 8.28594 16.802 8.28488Z" fill="#95E1D3"/>
+                </svg>                  
+              </button>
+              <button class="content-block__button button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.67 15.0972C10.164 17.8232 9.54802 20.4372 7.72002 21.8022C7.15702 17.6822 8.54902 14.5872 9.19502 11.3022C8.09302 9.39219 9.32802 5.54719 11.652 6.49419C14.512 7.66019 9.17502 13.5962 12.758 14.3382C16.499 15.1122 18.027 7.65519 15.707 5.22919C12.355 1.72819 5.95002 5.15019 6.73802 10.1632C6.93002 11.3892 8.15902 11.7612 7.22902 13.4532C5.08402 12.9622 4.44402 11.2202 4.52702 8.89719C4.65902 5.09719 7.84402 2.43519 11.038 2.06719C15.078 1.60119 18.869 3.59419 19.392 7.50719C19.982 11.9232 17.569 16.7072 13.25 16.3622C12.079 16.2692 11.587 15.6722 10.67 15.0972Z" fill="#95E1D3"/>
+                </svg>
+              </button>
+              <button class="content-block__button button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 21H9V9H13V11C13.4211 10.4643 13.9555 10.0284 14.565 9.72356C15.1744 9.41875 15.8438 9.25259 16.525 9.237C17.7164 9.24361 18.8565 9.72242 19.6954 10.5684C20.5343 11.4144 21.0035 12.5586 21 13.75V21H17V14.25C16.9226 13.7096 16.6527 13.2153 16.2398 12.8581C15.8269 12.5009 15.2989 12.3048 14.753 12.306C14.5087 12.3137 14.2684 12.3707 14.0466 12.4736C13.8249 12.5765 13.6262 12.7231 13.4624 12.9046C13.2987 13.0862 13.1734 13.2989 13.0939 13.5301C13.0144 13.7613 12.9825 14.0062 13 14.25V21ZM7 21H3V9H7V21ZM5 7C4.46957 7 3.96086 6.78929 3.58579 6.41421C3.21071 6.03914 3 5.53043 3 5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3C5.53043 3 6.03914 3.21071 6.41421 3.58579C6.78929 3.96086 7 4.46957 7 5C7 5.53043 6.78929 6.03914 6.41421 6.41421C6.03914 6.78929 5.53043 7 5 7Z" fill="#95E1D3"/>
+                </svg>
+              </button>
+              <button class="content-block__button button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.006 19.012H11.986C11.924 19.012 5.721 19 4.156 18.575C3.73314 18.4611 3.34762 18.2381 3.03804 17.9283C2.72846 17.6186 2.50568 17.2329 2.392 16.81C2.11059 15.2224 1.97469 13.6123 1.986 12C1.97874 10.385 2.11831 8.77271 2.403 7.183C2.51989 6.75937 2.7437 6.3729 3.05295 6.06067C3.36221 5.74844 3.74652 5.52094 4.169 5.4C5.691 5 11.723 5 11.979 5H12C12.063 5 18.282 5.012 19.831 5.437C20.69 5.67 21.361 6.341 21.593 7.2C21.883 8.794 22.02 10.411 22 12.031C22.007 13.644 21.8671 15.2543 21.582 16.842C21.4668 17.2645 21.2432 17.6494 20.9332 17.9587C20.6232 18.268 20.2377 18.4908 19.815 18.605C18.295 19.008 12.262 19.012 12.006 19.012ZM10.006 9.005L10.001 15.005L15.213 12.005L10.006 9.005Z" fill="#95E1D3"/>
+                </svg>
+              </button>
+              <button class="content-block__button button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 0.571289C5.68798 0.571289 0.571411 5.68786 0.571411 11.9999C0.571411 18.3119 5.68798 23.4284 12 23.4284C18.312 23.4284 23.4286 18.3119 23.4286 11.9999C23.4286 5.68786 18.312 0.571289 12 0.571289ZM12 2.22729C14.4897 2.22729 16.7623 3.15872 18.488 4.69129C17.22 6.36386 15.2937 7.47757 13.3634 8.23129C12.2707 6.2412 11.0461 4.32645 9.6977 2.49986C10.4518 2.31809 11.2248 2.22659 12.0006 2.22729H12ZM7.84227 3.153C9.11655 5.05929 10.3508 6.82672 11.4783 8.82729C8.62684 9.56615 5.40455 10.0096 2.42798 10.017C3.05541 6.97243 5.10055 4.44443 7.84227 3.15357V3.153ZM19.572 5.82157C20.9841 7.54726 21.761 9.70548 21.7726 11.9353C19.512 11.4896 17.264 11.373 14.9748 11.6039C14.7177 10.9621 14.4057 10.3524 14.1068 9.69529C16.08 8.89929 18.1897 7.537 19.572 5.821V5.82157ZM12.272 10.3393C12.5166 10.8593 12.8 11.4113 13.0663 11.9753C9.88341 13.3787 6.4977 15.2541 4.74055 18.5421C3.0537 16.6754 2.15473 14.2283 2.23198 11.7136C5.64055 11.6976 8.98627 11.2713 12.272 10.3393ZM17.4366 13.0039C18.8587 13.0042 20.275 13.1866 21.6508 13.5467C21.4387 14.8703 20.9565 16.136 20.2343 17.2653C19.512 18.3945 18.5651 19.3631 17.4526 20.1107C16.928 17.725 16.428 15.4421 15.544 13.1404C16.1705 13.0491 16.8028 13.0033 17.436 13.0033L17.4366 13.0039ZM21.7017 13.181C21.6948 13.237 21.6886 13.2919 21.6806 13.3467C21.6886 13.2913 21.6954 13.2364 21.7017 13.181ZM13.736 13.5867C14.6366 15.9141 15.3434 18.4913 15.8177 20.9993C14.6104 21.5116 13.312 21.7747 12.0006 21.773C9.82789 21.7761 7.71671 21.0519 6.00341 19.7159C7.77312 16.845 10.5143 14.6724 13.7354 13.5873L13.736 13.5867Z" fill="#95E1D3"/>
+                </svg>
+              </button>
+              <button class="content-block__button button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.6 5.82C16.6 5.82 17.11 6.32 16.6 5.82C15.9165 5.03962 15.5397 4.03743 15.54 3H12.45V15.4C12.4262 16.071 12.1429 16.7066 11.6598 17.1729C11.1767 17.6393 10.5315 17.8999 9.86003 17.9C8.44003 17.9 7.26003 16.74 7.26003 15.3C7.26003 13.58 8.92003 12.29 10.63 12.82V9.66C7.18003 9.2 4.16003 11.88 4.16003 15.3C4.16003 18.63 6.92003 21 9.85003 21C12.99 21 15.54 18.45 15.54 15.3V9.01C16.793 9.90985 18.2974 10.3926 19.84 10.39V7.3C19.84 7.3 17.96 7.39 16.6 5.82Z" fill="#95E1D3"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <form class="footer-form" action="">
+            <input class="footer-form__input" type="text" placeholder="Your Email">
+            <button class="footer-form__button button">SUBSCRIBE</button>
+          </form>
+        </div>
+
+        <div class="content-block">
+          <p class="content-block__title">BLOGS</p>
+          <div class="content-block__card">
+            <img class="blog-image" src="./images/footer/blogs/1.png" alt="Blog photo">
+            <div class="content-block__blog-text">
+              <p class="content-block__blog-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="block-text">jan.9.22.15</p>
+            </div>
+          </div>
+          <div class="content-block__card">
+            <img class="blog-image" src="./images/footer/blogs/2.png" alt="Blog photo">
+            <div class="content-block__blog-text">
+              <p class="content-block__blog-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="block-text">jan.9.22.15</p>
+            </div>
+          </div>
+          <div class="content-block__card">
+            <img class="blog-image" src="./images/footer/blogs/3.png" alt="Blog photo">
+            <div class="content-block__blog-text">
+              <p class="content-block__blog-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="block-text">jan.9.22.15</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-block"></div>
+
+      </div>
+        <p class="coptright">Copyright © 2021 mogo. All Rights Reserved</p>
+
+      
+    </div>
+    </div>
+
     <script type="module" src="./js/index.js"></script>
-</body>
+  </body>
 </html>

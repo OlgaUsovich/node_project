@@ -1,0 +1,146 @@
+.footer {
+    background-color: $light-grey;
+    padding-top: 2.625rem;
+
+    &__all-info {
+        margin: 0 auto;
+        max-width: 73.125rem;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+}
+
+.content-block {
+    &__logo {
+        width: 8.81rem;
+        height: 2.375rem;
+        margin-top: 2.25rem;
+        margin-bottom: 1.625rem;
+    }
+
+    &__text {
+        margin: 0;
+        width: 23.125rem;
+        height: 8.75rem;
+        padding: 1.07rem 0;
+        font-family: $main-font;
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: $grey;
+    }
+
+    &__followers {
+        margin: 0;
+        font-family: $main-font;
+        font-size: 1.125rem;
+        font-style: italic;
+        line-height: 5rem;
+    }
+
+    &__num {
+        font-size: 2.25rem;
+        font-style: normal;
+        font-weight: 700;
+
+        &-2 {
+            font-size: 1.125rem;
+            font-weight: 700;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 2.6875rem;
+        border-top: 0.0625rem solid $grey;
+    }
+
+    &__follow {
+        margin: 0;
+        font-family: $main-font;
+        font-size: 0.8125rem;
+        color: $grey;
+    }
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        width: 29.25rem;
+        margin-bottom: 1.25rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        font-family: $main-font;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 6.25rem;
+        color: $black;
+    }
+
+    &__blog-title {
+        margin: 0;
+        font-family: $main-font;
+        font-size: 1.125rem;
+        font-weight: 700;
+        line-height: 1.32rem;
+        color: $black;
+        width: 16.875rem;
+    }
+}
+
+.footer-form {
+    margin-top: 2.3125rem;
+
+    &__input {
+        width: 14.625rem;
+        height: 3.4375rem;
+        border: 0.0625rem solid $grey;
+        font-family: $main-font;
+        font-size: 1.125rem;
+        color: $grey;
+        
+
+        &::placeholder {
+            text-align: center;
+            color: $grey;
+        }
+
+        &:focus-visible {
+            outline: 0.0625rem solid $blue;
+        }
+    }
+
+    &__button {
+        width: 8.315rem;
+        height: 3.4375rem;
+        margin-left: -0.3125rem;
+        font-family: $main-font;
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: #FFFFFF;
+        background-color: $blue;
+
+        &:hover {
+            background-color: #87D2C4;
+        }
+
+        &:active {
+            background-color: #5C958A;
+        }
+    }
+}
+
+.blog-image {
+    width: 10.625rem;
+    height: 6.5625rem;
+}
