@@ -1,0 +1,158 @@
+.team {
+  padding: 5.25rem 10.625rem 5.25rem 9.5625rem;
+
+  @media (max-width: 1509.98px) and (min-width: 1024px) {
+    padding: 3.625rem 1rem 3.625rem 0.79rem;
+  }
+
+  @media (max-width: 1023.98px) {
+    padding: 1.8125rem 0.9375rem 3.61rem 1rem;
+  }
+
+  &__pics {
+    position: relative;
+    margin: 3.625rem auto 0;
+
+    @media (max-width: 1509.98px) and (min-width: 1024px) {
+      margin-top: 3.07rem;
+    }
+
+    @media (max-width: 1023.98px) {
+      margin-top: 1.17rem;
+      height: 60.9rem;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__image {
+    $parent: &;
+    position: relative;
+    width: 23.125rem;
+    height: 26.5rem;
+
+    @media (max-width: 1509.98px) and (min-width: 1024px) {
+      width: 19.875rem;
+      height: 22.44rem;
+    }
+
+    @media (max-width: 1023.98px) {
+      width: 18rem;
+      height: 14.77rem;
+    }
+
+    &--first {
+      background: no-repeat center center url(../images/team/1.png);
+      background-size: cover;
+    }
+
+    &--second {
+      background: no-repeat center center url(../images/team/2.png);
+      background-size: cover;
+    }
+
+    &--third {
+      background: no-repeat center center url(../images/team/3.png);
+      background-size: cover;
+    }
+
+    &--cover {
+      display: none;
+
+      @media (max-width: 1023.98px) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        column-gap: 0.0625rem;
+        background: 0;
+        height: inherit;
+        width: inherit;
+      }
+    }
+
+    @media (min-width: 1023.98px) {
+      &:hover {
+        & #{$parent}--cover {
+          position: absolute;
+          bottom: 1rem;
+          right: 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          column-gap: 0.0625rem;
+          height: inherit;
+          width: inherit;
+
+          @media (max-width: 1509.98px) and (min-width: 1024px) {
+            bottom: 0.3rem;
+            right: 0.3rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.625rem;
+    height: 2.625rem;
+    font-size: 1.97rem;
+    text-decoration: none;
+    color: $rose;
+    background-color: $yellow;
+
+    &:hover {
+      color: $white;
+      background-color: $rose;
+    }
+
+    @media (max-width: 1509.98px) and (min-width: 1024px) {
+      width: 2.22rem;
+      height: 2.22rem;
+    }
+  }
+
+  &__person-name {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 1.62rem auto;
+    color: $black;
+
+    @media (max-width: 1509.98px) and (min-width: 1024px) {
+      font-size: 1.125rem;
+      margin: 0.87rem auto;
+    }
+
+    @media (max-width: 1023.98px) {
+      font-size: 1.125rem;
+      margin: 0.87rem auto;
+    }
+  }
+
+  &__job {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 1.125rem;
+    padding: 0;
+    margin: 0.28rem auto;
+    color: $black;
+
+    @media (max-width: 1509.98px) and (min-width: 1024px) {
+      font-size: 0.875rem;
+      margin: 0.08rem auto;
+    }
+
+    @media (max-width: 1023.98px) {
+      font-size: 0.875rem;
+      margin: 0.08rem auto;
+    }
+  }
+}

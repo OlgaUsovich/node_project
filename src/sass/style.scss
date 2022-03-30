@@ -1,0 +1,24 @@
+@import "_variables.scss";
+@import "_common-elements.scss";
+@import "_start-block.scss";
+@import "_about.scss";
+@import "_indicators.scss";
+@import "_work.scss";
+@import "_devices.scss";
+@import "_service.scss";
+@import "_comments.scss";
+@import "team";
+@import "logos";
+@import "our-work";
+@import "clients";
+@import "stories";
+@import "latest";
+@import "footer";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}

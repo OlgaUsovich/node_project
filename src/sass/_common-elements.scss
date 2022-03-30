@@ -1,0 +1,210 @@
+.gradient {
+  background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+}
+
+.logo {
+  width: 16.875rem;
+  height: 6.25rem;
+
+  @media (max-width: 1509.98px) and (min-width: 1024px) {
+    width: 11.44rem;
+    height: 4.24rem;
+  }
+
+  @media (max-width: 1023.98px) {
+    width: 8.375rem;
+    height: 3.5rem;
+  }
+}
+
+.cursive-subtitle {
+  margin: 0;
+  font-family: $blocks_name-font;
+  font-size: 1.875rem;
+  font-weight: 400;
+  line-height: 5rem;
+  text-align: center;
+  color: $black;
+
+  @media (max-width: 1509.98px) and (min-width: 1024px) {
+    font-size: 1.5rem;
+    line-height: 4.18rem;
+  }
+
+  @media (max-width: 1023.98px) {
+    font-size: 1.5rem;
+    line-height: 4.18rem;
+  }
+}
+
+.line {
+  width: 10.625rem;
+  height: 1.5rem;
+  margin: 0 auto;
+  border-bottom: 4px solid $rose;
+
+  @media (max-width: 1509.98px) and (min-width: 1024px) {
+    width: 9.25rem;
+    height: 1.27rem;
+  }
+
+  @media (max-width: 1023.98px) {
+    width: 8.375rem;
+    height: 1.125rem;
+  }
+}
+
+.button-learn {
+  display: block;
+  width: 23.0625rem;
+  border: 0.25rem solid $white;
+  font-family: $main-font;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: $white;
+
+  @media (max-width: 1509.98px) and (min-width: 1024px) {
+    width: 19.875rem;
+    font-size: 1.125rem;
+    line-height: 3.39rem;
+  }
+
+  @media (max-width: 1023.98px) {
+    width: 17.8125rem;
+    font-size: 1.125rem;
+    line-height: 3.39rem;
+  }
+
+  &:hover {
+    background-color: $white;
+    color: $orange;
+  }
+
+  &:active {
+    background-color: $white;
+    color: $orange;
+    border-color: $orange;
+  }
+}
+
+.burger {
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  width: 3.4375rem;
+  height: 3.5rem;
+}
+
+.block-title {
+  margin: 0;
+  font-family: $main-font;
+  font-size: 2.25rem;
+  text-align: center;
+  font-weight: 900;
+  line-height: 5.0625rem;
+  color: $black;
+
+  @media (max-width: 1509.98px) and (min-width: 1024px) {
+    font-size: 1.5rem;
+    line-height: 4.23rem;
+  }
+
+  @media (max-width: 1023.98px) {
+    font-size: 1.5rem;
+    line-height: 4.25rem;
+  }
+}
+
+.block-description {
+  width: 73.125rem;
+  padding: 2.37rem 0;
+  margin: 0 auto;
+  font-family: $main-font;
+  font-size: 1.125rem;
+  line-height: 1.32rem;
+  text-align: center;
+
+  @media (max-width: 1509.98px) and (min-width: 1024px) {
+    width: 61.16rem;
+    padding: 2.03rem 0;
+    font-size: 0.875rem;
+    line-height: 1.03rem;
+  }
+
+  @media (max-width: 1023.98px) {
+    width: 18rem;
+    padding: 0.98rem 0;
+    font-size: 0.875rem;
+    line-height: 1.03rem;
+  }
+}
+
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+
+.element-title {
+  font-family: $main-font;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: $black;
+
+  @media (max-width: 1509.98px) {
+    font-size: 1.125rem;
+  }
+}
+
+.element-text {
+  font-family: $main-font;
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin: 0;
+  color: $black;
+
+  @media (max-width: 1509.98px) {
+    font-size: 0.875rem;
+  }
+}
+
+.collapse--hide {
+  height: 0;
+}
+
+.button {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.switches {
+  display: none;
+
+  @media (max-width: 1023.98px) {
+    display: flex;
+    justify-content: space-between;
+    width: 8.09rem;
+    margin: 0 auto;
+  }
+
+  &__switch {
+    width: 0.59rem;
+    height: 0.59rem;
+    border-radius: 50%;
+    border: 0.0625rem solid $grey;
+
+    &--active {
+      background-color: $grey;
+    }
+  }
+}
