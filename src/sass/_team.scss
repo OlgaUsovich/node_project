@@ -83,6 +83,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          column-gap: 0.0625rem;
           height: inherit;
           width: inherit;
 
@@ -96,8 +97,20 @@
   }
 
   &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 2.625rem;
     height: 2.625rem;
+    font-size: 1.97rem;
+    text-decoration: none;
+    color: $rose;
+    background-color: $yellow;
+
+    &:hover {
+      color: $white;
+      background-color: $rose;
+    }
 
     @media (max-width: 1509.98px) and (min-width: 1024px) {
       width: 2.22rem;
@@ -113,16 +126,16 @@
     margin: 1.62rem auto;
     color: $black;
 
-        @media (max-width: 1509.98px) and (min-width: 1024px) {
-        font-size: 1.125rem;
-        margin: 0.87rem auto;
-        }
-
-        @media (max-width: 1023.98px) {
-            font-size: 1.125rem;
-            margin: 0.87rem auto;
-        }
+    @media (max-width: 1509.98px) and (min-width: 1024px) {
+      font-size: 1.125rem;
+      margin: 0.87rem auto;
     }
+
+    @media (max-width: 1023.98px) {
+      font-size: 1.125rem;
+      margin: 0.87rem auto;
+    }
+  }
 
   &__job {
     font-family: $main-font;
@@ -136,10 +149,10 @@
       font-size: 0.875rem;
       margin: 0.08rem auto;
     }
-    
+
     @media (max-width: 1023.98px) {
-        font-size: 0.875rem;
-        margin: 0.08rem auto;
+      font-size: 0.875rem;
+      margin: 0.08rem auto;
     }
   }
 }

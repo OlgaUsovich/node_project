@@ -167,13 +167,12 @@
     }
   }
 
-  &__button svg {
-    width: 1.5rem;
-    height: 1.5rem;
+  &__button {
+    font-size: 1.125rem;
+    color: $blue;
 
     @media (max-width: 1509.98px) {
-      width: 1.015rem;
-      height: 1.015rem;
+      font-size: 1rem;
     }
   }
 
